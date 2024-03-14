@@ -2,7 +2,7 @@
 ALTER TABLE singer RENAME TO musician;
 ALTER TABLE musician RENAME COLUMN singerName TO musicianName;
 
---Rajouter les colonnes role et bandName à la table musician
+-- Rajouter les colonnes role et bandName à la table musician
 ALTER TABLE musician ADD COLUMN role VARCHAR(50);
 ALTER TABLE musician ADD COLUMN bandName VARCHAR(50);
 
@@ -22,7 +22,7 @@ UPDATE musician SET role = 'piano', bandName = 'Luna' WHERE musicianName = 'Luna
 CREATE TABLE band (
     bandName VARCHAR(50) PRIMARY KEY, creation YEAR, genre VARCHAR(50)
     );
---Remplir la table band
+-- Remplir la table band
 --Crazy Duo | 2015 | rock |
 --| Luna | 2009 | classical |
 --| Mysterio | 2019 | pop |
